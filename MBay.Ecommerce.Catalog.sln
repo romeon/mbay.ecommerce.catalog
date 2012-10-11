@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MBay.Ecommerce.Catalog.Domain", "MBay.Ecommerce.Catalog\MBay.Ecommerce.Catalog.Domain.csproj", "{1729716E-0CF6-4F25-BB62-8DD2B96A2B9C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MBay.Ecommerce.Catalog.Domain", "MBay.Ecommerce.Catalog.Domain\MBay.Ecommerce.Catalog.Domain.csproj", "{1729716E-0CF6-4F25-BB62-8DD2B96A2B9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
