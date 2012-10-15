@@ -29,62 +29,23 @@ namespace MBay.Core.Domain
          */
 
         #region Properties
-
         public Guid CategoryId { get; set; }
-
         public String Name { get; set; }
-
         public String Summary { get; set; }
-
         public String Description { get; set; }
-
         public String SEKeywords { get; set; }
-
         public String SEDescription { get; set; }
-
         public String DisplayPrefix { get; set; }
-
         public String SETitle { get; set; }
-
         public String SEAltText { get; set; }
-
         public Guid ParentCategoryID { get; set; }
-
         public Boolean Published { get; set; }
-
         public Boolean Wholesale { get; set; }
-
         public string SEName { get; set; }
-
         public Boolean IsImport { get; set; }
-
         public Boolean Deleted { get; set; }
-
-        private DateTime _createdOn;
-        public DateTime CreatedOn
-        {
-            get
-            {
-                return _createdOn;
-            }
-            set
-            {
-                _createdOn = value;
-            }
-        }
-
-        private DateTime _taxClassID;
-        public DateTime TaxClassID
-        {
-            get
-            {
-                return _taxClassID;
-            }
-            set
-            {
-                _taxClassID = value;
-            }
-        }
+        public DateTime CreatedOn { get; set; }
+        public DateTime TaxClassID { get; set; }
         #endregion
 
         #region ctor
