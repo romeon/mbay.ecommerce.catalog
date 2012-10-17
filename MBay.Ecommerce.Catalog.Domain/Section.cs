@@ -5,11 +5,11 @@ using System.Text;
 
 namespace MBay.Core.Domain
 {
-    public class Category
+    public class Section
     {
         /*TODO: Add the following properties
            
-         * CategoryID -Guid
+         * SectionID -Guid
          * Name
          * Summary
          * Description
@@ -18,18 +18,19 @@ namespace MBay.Core.Domain
          * DisplayPrefix
          * SETitle
          * SEAltText
-         * ParentCategoryID -Guid
-         * Published -boolean
+         * ParentSectionID -Guid
+         * Published - boolean
          * Wholesale -boolean
+         * ShowInProductBrowser -boolean
+         * QuantityDiscountID -boolean
          * SEName
          * IsImport -boolean
-         * Deleted -boolean
+         * Deleted - boolean
          * CreatedOn -datetime
-         * TaxClassID -datetime
          */
 
         #region Properties
-        public Guid CategoryId { get; set; }
+        public Guid SectionId { get; set; }
         public string Name { get; set; }
         public string Summary { get; set; }
         public string Description { get; set; }
@@ -38,25 +39,26 @@ namespace MBay.Core.Domain
         public string DisplayPrefix { get; set; }
         public string SETitle { get; set; }
         public string SEAltText { get; set; }
-        public Guid ParentCategoryID { get; set; }
+        public Guid ParentSectionId { get; set; }
         public Boolean Published { get; set; }
         public Boolean Wholesale { get; set; }
+        public Boolean ShowInProductBrowser { get; set; }
+        public Boolean QuantityDiscountId { get; set; }
         public string SEName { get; set; }
         public Boolean IsImport { get; set; }
         public Boolean Deleted { get; set; }
         public DateTime CreatedOn { get; set; }
-        public DateTime TaxClassID { get; set; }
         #endregion
 
         #region ctor
-        public Category()
+        public Section()
         {
-            CategoryId = Guid.NewGuid();
+            SectionId = Guid.NewGuid();
         }
 
-        public Category(Guid categoryId)
+        public Section(Guid sectionId)
         {
-            CategoryId = categoryId;
+            SectionId = sectionId;
         }
         #endregion
     }
