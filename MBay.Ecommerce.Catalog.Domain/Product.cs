@@ -72,19 +72,19 @@ namespace MBay.Core.Domain
         public Guid TaxClassId { get; set; }
         public string SKU { get; set; }
         public string ManufacturerPartNumber { get; set; }
-        public Boolean IsFeatured { get; set; }
-        public Boolean Published { get; set; }
-        public Boolean Wholesale { get; set; }
-        public Boolean RequiresRegistration { get; set; }
+        public bool IsFeatured { get; set; }
+        public bool Published { get; set; }
+        public bool Wholesale { get; set; }
+        public bool RequiresRegistration { get; set; }
         public string Notes { get; set; }
         public int QuantityDiscountId { get; set; }
         public string RelatedProducts { get; set; }
         public string UpsellProducts { get; set; }
         public double UpsellProductDiscountPercentage { get; set; }
-        public Boolean IsAPack { get; set; }
+        public bool IsAPack { get; set; }
         public int PackSize { get; set; }
-        public Boolean ShowBuyButton { get; set; }
-        public Boolean HidePriceUntilCart { get; set; }
+        public bool ShowBuyButton { get; set; }
+        public bool HidePriceUntilCart { get; set; }
         public string SEName { get; set; }
         public string ExtensionData { get; set; }
         public string ExtensionData1 { get; set; }
@@ -93,12 +93,12 @@ namespace MBay.Core.Domain
         public string ExtensionData4 { get; set; }
         public string ExtensionData5 { get; set; }
         public string ContentsBGColor { get; set; }
-        public Boolean Deleted { get; set; }
+        public bool Deleted { get; set; }
         public DateTime CreatedOn { get; set; }
         public string WarehouseLocation { get; set; }
         public DateTime AvailableStartDate { get; set; }
         public DateTime AvailableStopDate { get; set; }
-        public Boolean GoogleCheckoutAllowed { get; set; }
+        public bool GoogleCheckoutAllowed { get; set; }
         #endregion
 
         #region ctor
